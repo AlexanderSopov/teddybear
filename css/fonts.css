@@ -1,0 +1,30 @@
+@font-face {
+	font-family: bukhari-alternates;
+	src: url(bukhari-font/BukhariScriptAlternates.ttf) format('truetype'); /* Safari, Android, iOS */
+	font-stretch:condensed;
+}
+
+@font-face {
+	font-family: bukhari;
+	src: url(bukhari-font/Bukhari.ttf)  format('truetype'); /* Safari, Android, iOS */
+	font-stretch:expanded;
+}
+
+@font-face {
+	font-family: archive;
+	src: url(archive-font/Archive.otf); /* Safari, Android, iOS */
+}
+
+
+h1{
+	font-family: 'archive';
+	font-size: 3.5em;
+	font-weight:400;
+}
+h3{
+	font-family: 'archive';
+	font-size: 1.5em;
+	font-weight:100;
+	margin-bottom: -10px;
+	font-stretch:ultra-expanded;
+}
