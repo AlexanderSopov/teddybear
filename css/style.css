@@ -13,9 +13,13 @@
 	z-index: -99;
 }
 
-.teddy-bg{
-	background-image:url("../img/teddy-background-1080.jpeg");
+.img-bg{
+	width:100%;
+	margin:0px;
+	position:absolute;
+	top:0px;
 }
+
 .screen-and-steel {
 	background-color:#C5C1C0; /*SCREEN*/
 	color:#0A1612; /*STEEL*/
@@ -32,7 +36,6 @@
 	color:#4E5247;
 }
 
-
 .md-height{
 	height:300px;
 }
@@ -45,3 +48,12 @@
 	height:535px;
 }
 
+.xl-height .row{
+	position:absolute;
+	width:100%;
+}
+
+.xl-height .row .col-xs-6{
+	margin-left:20px;
+	margin-top:150px;
+}
