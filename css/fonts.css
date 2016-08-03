@@ -17,19 +17,32 @@
 
 
 h1{
-	font-family: 'archive';
-	font-size: 3.5em;
-	font-weight:400;
-	margin-top:10px;
+	font-family: archive;
+	font-size: 3em;
+	font-weight:300;
 }
 h3{
-	font-family: 'archive';
+	font-family: archive;
 	font-size: 1.5em;
 	font-weight:100;
-	margin-bottom: 0px;
 	font-stretch:ultra-expanded;
 }
 
 p{
 	font-family: archive;
+}
+
+
+.fullscreen h1{
+	font-size: 3.8em;
+}
+
+.fullscreen h3{
+	font-size: 1.6em;
+	font-weight:500;
+}
+
+.fullscreen p{
+	font-size:1.1em;
+	font-weight:100;
 }
