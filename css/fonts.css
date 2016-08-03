@@ -43,6 +43,17 @@ p{
 }
 
 .fullscreen p{
-	font-size:1.1em;
-	font-weight:100;
+	font-size:1.2em;
+	color:#1F2B27;
+}
+
+
+.navbar a{
+	font-family: archive;
+	color:#4F6B67;
+	font-size: 1.2em;
+	margin-right:20px;
+}
+.navbar a:hover{
+	color:#6E7787;
 }
