@@ -15,24 +15,9 @@
 *{
 	font-family: archive;
 }
-h1{
-	font-size: 3em;
-	font-weight:300;
-}
-h2{
-	font-size: 1.5em;
-}
-.page-1 h1{
-	font-size: 1.9em;
-}
-.page-1 h2{
-	font-size: 1.23em;
-	font-weight:100;
-}
-.page-1 p{
-	font-size:1em;
-	color:#1F2B27;
-}
+
+.page-1 h1, .page-1 h2, .page-1 p{margin:0px;padding:0px;}
+
 .navbar a{
 	color:#4F6B67;
 	font-size: 1em;
@@ -44,7 +29,7 @@ h2{
 /* Small devices (small tablets, 568px and up) */
 @media (min-width: 480px ) {
 	.page-1 h1{
-		font-size:2em;
+		font-size:3.34em;
 	}
 	.page-1 h2{
 		font-size: 1em;
@@ -59,7 +44,7 @@ h2{
 /* Small devices (tablets, 650px and up) */
 @media (min-width: 650px) {
 	.page-1 h1{
-		font-size:2.8em;
+		font-size: 4.6em;
 	}
 	.page-1 h2{
 		font-size: 1.2em;
@@ -74,7 +59,7 @@ h2{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.page-1 h1{
-		font-size:3em;
+		font-size: 5.55em;
 	}
 	.page-1 h2{
 		font-size: 1.4em;
@@ -89,7 +74,7 @@ h2{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.page-1 h1{
-		font-size:3.4em;
+		font-size:7.3em;
 	}
 	.page-1 h2{
 		font-size: 1.7em;
@@ -104,7 +89,7 @@ h2{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.page-1 h1{
-		font-size:4em;
+		font-size:8.9em;
 	}
 	.page-1 h2{
 		font-size: 2em;
@@ -137,15 +122,28 @@ h2{
 			font-size: 0.7em;
 		}
 	}
+	/* Large devices (medium desktops, 550px and up) */
+	@media (min-width: 450px) {
+		.page-1 h1{
+			font-size: 3em;
+		}
+		.page-1 h2{
+			font-size: 1.7em;
+		}
+		.page-1 p{
+			font-size:1em;
+		}
+		.navbar a{
+			font-size: 1em;
+		}
+	}
 	/* Small devices (tablets, 768px and up) */
 	@media (min-width: 700px) {
 		.page-1 h1{
 			font-size: 4.5em;
 		}
+		.page-1 h2{
+			font-size: 2em;
+		}
 	}
-}
-
-
-h1,h2,h3,h4,p{
-	margin:0px;
 }

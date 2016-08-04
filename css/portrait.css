@@ -30,6 +30,8 @@
 @media (min-width: 450px) {
 	.box-md{
 		width:450px;
+		height:650px;
+		top:calc( (100% - 650px) / 2);
 		left:calc( (100% - 450px) / 2);
 	}
 }
@@ -45,6 +47,7 @@
 		order:3;
 	}
 	.page-1 .headline{
+		text-align: left;
 		order:1;
 	}
 	.page-1 .text{
