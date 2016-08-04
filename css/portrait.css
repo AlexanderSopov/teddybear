@@ -1,0 +1,41 @@
+
+section .container{
+	width:80%;
+}
+
+.page-1 .img{
+	display: table-header-group;
+}
+.page-1 .text{
+	display: table-row-group
+}
+.page-1 .navbar{
+	display: none;
+}
+/*
+.page-1 .navbar{
+	display: table-footer-group;
+}*/
+
+
+.page-2{
+	/*background-color:#286DA8;*/
+	background-image: url("../img/bg-img-2-1080.jpg");
+	color:#f4f4f2; /*STEEL*/
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+}

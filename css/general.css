@@ -1,0 +1,49 @@
+/*
+ *	Colorpallette from http://httpster.net/website/avondale-type-co/ 
+ *
+ *	background-image:url("../img/background-image-1-1080.jpeg");
+ */
+ body{
+ 	background-color:#C5C1C0;
+
+ }
+
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+section:nth-of-type(2n) {
+}
+section .container{
+	height:100%;
+	width:80%;
+}
+.screen-and-steel {
+	background-color:#C5C1C0; /*SCREEN*/
+	color:#0A1612; /*STEEL*/
+}
+
+.denim-and-steel {
+	background-color: #1A2930; /*DENIM*/
+	/* color: #f4f4f4; PAPER*/
+	color: #f4f4f2; /*STEEL*/
+}
+
+.marigold {
+	background-color: #F7CE3E; /*MARIGOLD*/
+	color:#4E5247;
+}
+
+.sm-height{
+	height:10vh;
+}
+.md-height{
+	height:35vh;
+}
+.lg-height{
+	height:55vh;
+}
