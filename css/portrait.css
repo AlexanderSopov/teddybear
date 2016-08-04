@@ -39,10 +39,12 @@
 @media (min-width: 700px) {
 	.box-md{
 		width:650px;
+		height:450px;
+		top:calc( (100% - 450px) / 2);
 		left:calc( (100% - 650px) / 2);
 	}
 	.page-1 .img{
-		width:40%;
+		width:50%;
 		position:initial;
 		order:3;
 	}
@@ -53,6 +55,6 @@
 	.page-1 .text{
 		text-align: left;
 		order:2;
-		width: 60%;
+		width: 50%;
 	}
 }

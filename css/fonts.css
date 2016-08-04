@@ -16,7 +16,6 @@
 	font-family: archive;
 }
 
-.page-1 h1, .page-1 h2, .page-1 p{margin:0px;padding:0px;}
 
 .navbar a{
 	color:#4F6B67;
@@ -26,91 +25,111 @@
 .navbar a:hover{
 	color:#6E7787;
 }
-/* Small devices (small tablets, 568px and up) */
-@media (min-width: 480px ) {
-	.page-1 h1{
-		font-size:3.34em;
+	
+
+@media all and (orientation: landscape) {
+	.headline h1, .text h2, .text p{margin:0px;padding:0px;}
+	.text h2{
+		padding-top:10px;
+		padding-left:10px;
 	}
-	.page-1 h2{
-		font-size: 1em;
+	.text p{
+		width:80%;
+		padding-left:10px;
 	}
-	.page-1 p{
-		font-size:0.7em;
+	/* Small devices (small tablets, 568px and up) */
+	@media (min-width: 480px ) {
+		.page-1 h1{
+			font-size:3.34em;
+		}
+		.page-1 h2{
+			font-size: 1em;
+		}
+		.page-1 p{
+			font-size:0.7em;
+		}
+		.navbar a{
+			font-size: 0.7em;
+		}
 	}
-	.navbar a{
-		font-size: 0.7em;
+	/* Small devices (tablets, 650px and up) */
+	@media (min-width: 650px) {
+		.page-1 h1{
+			font-size: 4.6em;
+		}
+		.page-1 h2{
+			font-size: 1.2em;
+		}
+		.page-1 p{
+			font-size:0.7em;
+		}
+		.navbar a{
+			font-size: 0.7em;
+		}
+	}
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: 768px) {
+		.page-1 h1{
+			font-size: 5.55em;
+		}
+		.page-1 h2{
+			font-size: 1.4em;
+		}
+		.page-1 p{
+			font-size:0.9em;
+		}
+		.navbar a{
+			font-size: 0.9em;
+		}
+	}
+	@media (min-width: 768px) {
+		.text h2{
+			padding-top:60px;
+			padding-left:20px;
+		}
+		.text p{
+			padding-left:20px;
+		}
+	}
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: 992px) {
+		.page-1 h1{
+			font-size:7.3em;
+		}
+		.page-1 h2{
+			font-size: 1.7em;
+		}
+		.page-1 p{
+			font-size:1em;
+		}
+		.navbar a{
+			font-size: 1em;
+		}
+	}
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) { 
+		.page-1 h1{
+			font-size:8.9em;
+		}
+		.page-1 h2{
+			font-size: 2em;
+		}
+		.page-1 p{
+			font-size:1.3em;
+		}
+		.navbar a{
+			font-size: 1.3em;
+		}
 	}
 }
-/* Small devices (tablets, 650px and up) */
-@media (min-width: 650px) {
-	.page-1 h1{
-		font-size: 4.6em;
-	}
-	.page-1 h2{
-		font-size: 1.2em;
-	}
-	.page-1 p{
-		font-size:0.7em;
-	}
-	.navbar a{
-		font-size: 0.7em;
-	}
-}
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-	.page-1 h1{
-		font-size: 5.55em;
-	}
-	.page-1 h2{
-		font-size: 1.4em;
-	}
-	.page-1 p{
-		font-size:0.9em;
-	}
-	.navbar a{
-		font-size: 0.9em;
-	}
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-	.page-1 h1{
-		font-size:7.3em;
-	}
-	.page-1 h2{
-		font-size: 1.7em;
-	}
-	.page-1 p{
-		font-size:1em;
-	}
-	.navbar a{
-		font-size: 1em;
-	}
-}
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-	.page-1 h1{
-		font-size:8.9em;
-	}
-	.page-1 h2{
-		font-size: 2em;
-	}
-	.page-1 p{
-		font-size:1.3em;
-	}
-	.navbar a{
-		font-size: 1.3em;
-	}
-}
+	
 
 
-@media all and (orientation:portrait) {
+@media all and (orientation: portrait) {
 	/* Small devices (small tablets, 568px and up) */
 	@media (min-width: 320px ) {
-		.page-1 p, .page-1 h2, .page-1 .navbar{
-			padding: 5px 0px 5px 0px;
-		}
 		.page-1 h1{
-			font-size:2em;
+			font-size:2.22em;
 		}
 		.page-1 h2{
 			font-size: 1em;
@@ -144,6 +163,14 @@
 		}
 		.page-1 h2{
 			font-size: 2em;
+		}
+		.headline h1{margin:0px;padding:0px;}
+		.text h2{
+			padding-top:10px;
+			padding-left:5px;
+		}
+		.text p{
+			padding-left:5px;
 		}
 	}
 }
