@@ -58,13 +58,13 @@
 			font-size: 4.6em;
 		}
 		.page-1 h2{
-			font-size: 1.2em;
+			font-size: 1.35em;
 		}
 		.page-1 p{
-			font-size:0.7em;
+			font-size:0.8em;
 		}
 		.navbar a{
-			font-size: 0.7em;
+			font-size: 0.8em;
 		}
 	}
 	/* Small devices (tablets, 768px and up) */
@@ -73,18 +73,16 @@
 			font-size: 5.55em;
 		}
 		.page-1 h2{
-			font-size: 1.4em;
+			font-size: 1.5em;
 		}
 		.page-1 p{
-			font-size:0.9em;
+			font-size:1em;
 		}
 		.navbar a{
-			font-size: 0.9em;
+			font-size: 1em;
 		}
-	}
-	@media (min-width: 768px) {
 		.text h2{
-			padding-top:60px;
+			padding-top:40px;
 			padding-left:20px;
 		}
 		.text p{
@@ -97,13 +95,16 @@
 			font-size:7.3em;
 		}
 		.page-1 h2{
-			font-size: 1.7em;
+			font-size: 2em;
 		}
 		.page-1 p{
-			font-size:1em;
+			font-size:1.2em;
 		}
 		.navbar a{
 			font-size: 1em;
+		}
+		.text h2{
+			padding-top:40px;
 		}
 	}
 	/* Large devices (large desktops, 1200px and up) */
