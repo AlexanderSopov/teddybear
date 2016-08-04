@@ -59,6 +59,14 @@ section .container{
 	padding-top:12vw;
 }
 
+.page-2{
+	/*background-color:#286DA8;*/
+	background-image: url("../img/bg-img-2-1080.jpg");
+	color:#f4f4f2; /*STEEL*/
+}
+
+
+
 .border{
 	/*border:1px solid black;
 }
