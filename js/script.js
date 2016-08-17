@@ -60,3 +60,5 @@ function populateNav(){
 	}
 	nav.html(html);
 }
+
+document.getElementById("headline").innerHtml = "Fuuuuuuck this shit!";
