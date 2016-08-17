@@ -17,8 +17,14 @@
 			<script src="js/jquery-3.1.0.min.js"></script>
 		<script src="js/script.js"></script>
 		-->
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script>
+setTimeout(function(){
+	var el = document.getElementById("headline");
+	console.log(el);
+	console.log(el.innerHTML);
+	el.innerHTML = "<h1>Fuuuck this shit!</h1>";
+},500);
 window.pages = [
 	{
 		name:"Home",
