@@ -5,9 +5,8 @@ $(document).ready(function(){
 	populateNav();
 	populatePage(pages[0]);
 });
-
 function changePage(link){
-	fadeOut(300, function(){
+	fadeOut(500, function(){
 		populatePage(
 			getPage(link.id)
 		);
