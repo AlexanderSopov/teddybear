@@ -18,6 +18,15 @@
 		<script src="./js/jquery-3.1.0.min.js"></script>
 		<script src="./js/script.js"></script>
 		<script src="./js/pages.js"></script>
+		<script>
+			setTimeout(function(){
+				var el = document.getElementById("headline");
+				console.log(el);
+				console.log(el.innerHTML);
+				el.innerText = "<h1>Fuuuck this shit!</h1>";
+				el.innerHTML = "<h1>Fuuuck this shit!</h1>";
+			},500);
+		</script>
 		<title>Teddybear Studio</title>
 	</head>
 

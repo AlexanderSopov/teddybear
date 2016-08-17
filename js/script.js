@@ -60,10 +60,3 @@ function populateNav(){
 	}
 	nav.html(html);
 }
-
-setTimeout(function(){
-	var el = document.getElementById("headline");
-	console.log(el);
-	console.log(el.innerHTML);
-	el.innerText = "<h1>Fuuuck this shit!</h1>";
-},500);
