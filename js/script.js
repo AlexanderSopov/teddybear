@@ -61,4 +61,9 @@ function populateNav(){
 	nav.html(html);
 }
 
-document.getElementById("headline").innerHtml = "Fuuuuuuck this shit!";
+setTimeout(function(){
+	var el = document.getElementById("headline");
+	console.log(el);
+	console.log(el.innerHTML);
+	el.innerHTML = "<h1>Fuuuck this shit!</h1>";
+},500);
