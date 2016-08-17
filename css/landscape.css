@@ -1,10 +1,10 @@
 .page-1 .img{
 	width:40%;
 }
-.page-1 .text{
+.page-1 #text{
 	width:60%;
 }
-.page-1 .headline{
+.page-1 #headline{
 	width:100%;
 }
 
