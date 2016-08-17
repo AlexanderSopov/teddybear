@@ -13,12 +13,191 @@
 		<link rel="stylesheet" media="all and (orientation:portrait)"  href="css/portrait.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<!--
-			<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 			<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-		-->
-		<script src="js/jquery-3.1.0.min.js"></script>
+			<script src="js/jquery-3.1.0.min.js"></script>
 		<script src="js/script.js"></script>
-		<script src="js/pages.js"></script>
+		-->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+window.pages = [
+	{
+		name:"Home",
+		headline:{
+			content:"Teddybear Studio",
+			type:"h1"
+		},
+		body:[{
+				content:"Fullstack Web Developers",
+				type:"h2"
+			},{
+				content:"Do you need a developer but don't have the time to find one? Don't worry, there's no need to go through the hassle and hope for the best.",
+				type:"p",
+			},{
+				content:"Instead, give us a call. We'll be there in no time.",
+				type:"p",
+		}],
+		img:{
+			alt:"Logo of a Teddybear",
+			src:"img/teddy-1.png"
+		}
+	},
+
+
+	{
+		name:"Product",
+		headline:{
+			content:"What We Produce",
+			type:"h1"
+		},
+		body:[{
+				content:"The Worlds Fastest Websites",
+				type:"h2"
+			},{
+				content:"The web is filled with fancy stuff for fancy people.",
+				type:"p",
+			},{
+				content:"Fortunately for us, we don't need to be this pretentious. Get a static website and be the fastest guy on the web!",
+				type:"p",
+		}],
+		img:{
+			alt:"Logo of a Teddybear",
+			src:"img/teddy-1.png"
+		}
+	},
+
+
+
+	{
+		name:"Promise",
+		headline:{
+			content:"A Single Promise",
+			type:"h1"
+		},
+		body:[{
+				content:"Fastest websites in your industry",
+				type:"h2"
+			},{
+				content:"We like honest people and we want to be honest with you: a static website is not for everyone.",
+				type:"p",
+			},{
+				content:"Are you >not< everyone? Great, get in touch and we'll help you out.",
+				type:"p",
+		}],
+		img:{
+			alt:"Logo of a Teddybear",
+			src:"img/teddy-1.png"
+		}
+	},
+
+
+	{
+		name:"Partners",
+		headline:{
+			content:"Teddybear Studio",
+			type:"h1"
+		},
+		body:[{
+				content:"Fullstack Web Developers",
+				type:"h2"
+			},{
+				content:"Do you need a developer but don't have the time to find one? Don't worry, there's not need to go through the hassle and hope for the best.",
+				type:"p",
+			},{
+				content:"Instead, give us a call. We'll be there in no time.",
+				type:"p",
+		}],
+		img:{
+			alt:"Logo of a Teddybear",
+			src:"img/teddy-1.png"
+		}
+	},
+
+	{
+		name:"Contact",
+		headline:{
+			content:"Teddybear Studio",
+			type:"h1"
+		},
+		body:[{
+				content:"Fullstack Web Developers",
+				type:"h2"
+			},{
+				content:"Do you need a developer but don't have the time to find one? Don't worry, there's not need to go through the hassle and hope for the best.",
+				type:"p",
+			},{
+				content:"Instead, give us a call. We'll be there in no time.",
+				type:"p",
+		}],
+		img:{
+			alt:"Logo of a Teddybear",
+			src:"img/teddy-1.png"
+		}
+	}
+];
+window.vrb = {};
+$(document).ready(function(){
+	vrb.headline = $("#headline"), vrb.body = $("#text"),
+	vrb.img = $("#bodyImg"), vrb.title= $("title"), vrb.boxMd=$(".box-md");
+	populateNav();
+	populatePage(pages[0]);
+});
+function changePage(link){
+	fadeOut(500, function(){
+		populatePage(
+			getPage(link.id)
+		);
+	});
+}
+function fadeOut(time, callback){
+	vrb.boxMd.fadeOut(time);
+	setTimeout(function(){callback();},time-10)
+	setTimeout(function(){
+		vrb.boxMd.fadeIn(time)
+	},time+10);
+}
+function getPage(pageName){
+	for (let i in pages)
+		if (pages[i].name == pageName)
+			return pages[i];
+}
+function populatePage(page){
+	vrb.title.html("Teddybear Studio - " + page.name);
+	vrb.headline.html(makeTag(page.headline));
+	var html ="";
+	for (let i in page.body)
+		html += makeTag(page.body[i]);
+	vrb.body.html(html);
+	changeImage(page.img);
+}
+function makeTag(tag){
+	function getId(id){
+		return " id='"+id+"'";
+	}
+	function getClass(classes){
+		return "class='"+classes+"'";
+	}
+	if(tag.type=="a")
+		return;
+	else if(tag.type=="button")
+		return "<"+tag.type+getId(tag.content)+getClass("navButton")+"onclick='changePage(this)'>"+tag.content+"</"+tag.type+">";
+	return "<"+tag.type+">"+tag.content+"</"+tag.type+">";
+}
+function changeImage(img){
+	console.log(vrb.img.attr("src"));
+	vrb.img.attr("src",encodeURI(img.src));
+	vrb.img.attr("alt",img.alt);
+	console.log(vrb.img.attr("src"));
+}
+function populateNav(){
+	var nav = $("#nav");
+	var html ="";
+	for (let i in pages){
+		html+= makeTag({content:pages[i].name,type:"button"});
+	}
+	nav.html(html);
+}
+			
+		</script>
 	</head>
 
 	<body>
