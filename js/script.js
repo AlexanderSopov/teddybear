@@ -1,7 +1,7 @@
 window.vrb = {};
 $(document).ready(function(){
 	vrb.headline = $("#headline"), vrb.body = $("#text"),
-	vrb.img = $("#bodyImg"), vrb.title= $("title"), vrb.boxMd=$(".box-md");
+	vrb.img = $("#bodyImg"), vrb.title= $("title"), vrb.fader=$(".fader");
 	populateNav();
 	populatePage(pages[0]);
 });
@@ -13,10 +13,10 @@ function changePage(link){
 	});
 }
 function fadeOut(time, callback){
-	vrb.boxMd.fadeOut(time);
+	vrb.fader.fadeOut(time);
 	setTimeout(function(){callback();},time-10)
 	setTimeout(function(){
-		vrb.boxMd.fadeIn(time)
+		vrb.fader.fadeIn(time)
 	},time+10);
 }
 function getPage(pageName){
