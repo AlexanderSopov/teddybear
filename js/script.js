@@ -42,8 +42,8 @@ function makeTag(tag){
 	}
 	if(tag.type=="a")
 		return;
-	else if(tag.type=="button")
-		return "<"+tag.type+getId(tag.content)+getClass("navButton")+"onclick='changePage(this)'>"+tag.content+"</"+tag.type+">";
+	else if(tag.headline)
+		return "<button"+getId(tag.name)+getClass("navButton")+" onclick='changePage(this)'>"+tag.headline.content+"</button>";
 	return "<"+tag.type+">"+tag.content+"</"+tag.type+">";
 }
 function changeImage(img){
@@ -56,7 +56,8 @@ function populateNav(){
 	var nav = $("#nav");
 	var html ="";
 	for (let i in pages){
-		html+= makeTag({content:pages[i].name,type:"button"});
+		console.log(JSON.stringify(pages[i]));
+		html+= makeTag(pages[i]);
 	}
 	nav.html(html);
 }
