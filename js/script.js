@@ -20,7 +20,7 @@ function fadeOut(time, callback){
 	},time+10);
 }
 function getPage(pageName){
-	for (let i =0; i<pages.length;i++)
+	for (var i =0; i<pages.length;i++)
 		if (pages[i].name == pageName)
 			return pages[i];
 }
@@ -28,7 +28,7 @@ function populatePage(page){
 	vrb.title.html("Teddybear Studio - " + page.name);
 	vrb.headline.html(makeTag(page.headline));
 	var html ="";
-	for (let i =0; i<pages.body.length;i++)
+	for (var i =0; i<pages.body.length;i++)
 		html += makeTag(page.body[i]);
 	vrb.body.html(html);
 	changeImage(page.img);
@@ -55,7 +55,7 @@ function changeImage(img){
 function populateNav(){
 	var nav = $("#nav");
 	var html ="";
-	for (let i =0; i<pages.length;i++){
+	for (var i =0; i<pages.length;i++){
 		console.log(JSON.stringify(pages[i]));
 		html+= makeTag(pages[i]);
 	}
