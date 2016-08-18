@@ -41,7 +41,7 @@ window.pages = [
 				content:"The web really is filled with fancy stuff for fancy people.",
 				type:"p"
 			},{
-				content:"Fortunately for us, we don't need to be this pretentious. There are alternative ways to go and the fastest way is static",
+				content:"Fortunately though, we don't need to be this pretentious. There are alternative ways to go and the fastest way is static.",
 				type:"p"
 			},{
 				content:"Get a static website and be the fastest guy on the web!",
@@ -65,7 +65,7 @@ window.pages = [
 				content:"Fast and reliable websites",
 				type:"h2"
 			},{
-				content:"Google loves fast websites. It's their number one factor when ranking websites and guess what? Our static sites are the fastest ones around.",
+				content:"Google loves fast websites. It's their number one factor when ranking them and guess what? Our static sites are the fastest ones around.",
 				type:"p"
 			},{
 				content:"But We love honesty and we want to be honest with you: a static website is not for everyone.",
@@ -91,14 +91,15 @@ window.pages = [
 				content:"A Collection Of A-Class Players",
 				type:"h2"
 			},{
-				content:"Money, industry and trends are secondary to our mission and our mission is simple: Have fun and raise the bar doing it.",
-				type:"p"
-			},{
-				content:"We find joy in solving tough problems and in delivering great products to great people. Our customers produce high quality media, they create exciting marketing campaigns and they innovate in their industries.",
+				content:"Our customers produce high quality media, they create exciting marketing campaigns and they innovate in their respective industries.",
 				type:"p"
 			},{
 				content:"Working with them is both our privilege and advantage.",
 				type:"p"
+			},{
+				content:"Money, industry and trends are secondary when chosing our next step. Instead we turn to our mission and our mission is simple: Have fun and raise the bar doing it.",
+				type:"p"
+			
 		}],
 		img:{
 			alt:"Logo of a Teddybear",
@@ -122,7 +123,7 @@ window.pages = [
 				content:"If you already know what you want and we're the team for the job, then I congratulate you. You're job is halfway done.",
 				type:"p"
 			},{
-				content:"Fill out the form to the right and We'll contact you within a week.",
+				content:"Fill out the form to the right and you'll be one step closer to solving your problem.",
 				type:"p"
 		}],
 		img:{
