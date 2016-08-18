@@ -28,7 +28,7 @@ function populatePage(page){
 	vrb.title.html("Teddybear Studio - " + page.name);
 	vrb.headline.html(makeTag(page.headline));
 	var html ="";
-	for (var i =0; i<pages.body.length;i++)
+	for (var i =0; i<page.body.length;i++)
 		html += makeTag(page.body[i]);
 	vrb.body.html(html);
 	changeImage(page.img);
