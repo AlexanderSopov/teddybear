@@ -55,7 +55,7 @@ function changeImage(img){
 function populateNav(){
 	var nav = $("#nav");
 	var html ="";
-	for (var i=0; i<pages.length; i++){
+	for (var i =0; i<pages.length; i++){
 		console.log(JSON.stringify(pages[i]));
 		html+= makeTag(pages[i]);
 	}
